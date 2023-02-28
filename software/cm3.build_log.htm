@@ -1,0 +1,56 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.27.1.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 chensheng, 1, LIC=03C6R-KQS2B-9U74U-SMWQN-MR37U-YZX4I
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.35.0.2
+Toolchain Path:  C:\keil5\keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.35.0.2
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      Segger\JL2CM3.dll V2.99.26.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+D:\FPGA\ARM_SPI\CortexM3_Eval\software\cm3.uvprojx
+Project File Date:  02/21/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\keil5\keil5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling main.c...
+code\CortexM3_driver.h(102): warning:  #1295-D: Deprecated declaration getKEY - give arg types
+  extern int getKEY();
+code\main.c: 1 warning, 0 errors
+linking...
+Program Size: Code=1040 RO-data=112 RW-data=8 ZI-data=32768  
+FromELF: creating hex file...
+After Build - User command #1: fromelf -cvf .\cm3.axf --vhx --32x1 -o image.hex
+After Build - User command #2: fromelf -cvf .\cm3.axf -o image.txt
+".\cm3.axf" - 0 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.V2M-MPS2_DSx_BSP.1.1.0.pack
+                Keil.V2M-MPS2_DSx_BSP.1.1.0
+                ARM V2M-MPS2 Board Support PACK for DesignStart Devices
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\keil5\keil5\ARM\PACK\Keil\V2M-MPS2_DSx_BSP\1.1.0\Device\DS_CM3\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

@@ -1,0 +1,54 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../CortexM3_Eval.srcs/sources_1/ip/clk_wiz_0" \
+"../../../../CortexM3_Eval.srcs/sources_1/ip/ila_0/sim/ila_0.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtx.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxArbM0.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxArbM1.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxArbM2.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxArbM3.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxArbM4.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxDecS0.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxDecS1.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxDecS2.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxDecS3.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxDecS4.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxInStg.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxOutStgM0.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxOutStgM1.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxOutStgM2.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxOutStgM3.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxOutStgM4.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtx_default_slave.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbArb.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbDecS0.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbInStg.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbMtx.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbMtx_default_slave.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbOutStg.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/peripheral/cmsdk_ahb_default_slave.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/gpio/cmsdk_ahb_gpio.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/sys_ahb/cmsdk_ahb_to_ahb_sync.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/sys_ahb/cmsdk_ahb_to_ahb_sync_error_canc.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/rtl_cortex/cmsdk_ahb_to_apb.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/gpio/cmsdk_ahb_to_iop.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/peripheral/cmsdk_ahb_to_sram.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/led/cmsdk_apb3_eg_slave_interface_led.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/led/cmsdk_apb3_eg_slave_led.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/apb/cmsdk_apb_slave_mux.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/peripheral/cmsdk_apb_uart.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/peripheral/cmsdk_fpga_sram.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/gpio/cmsdk_iop_gpio.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/rtl_cortex/cortexm3ds_logic.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/button/custom_apb_button.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/imports/led/custom_apb_led.v" \
+"../../../../CortexM3_Eval.srcs/sources_1/new/swdio_tri_buf.v" \
+"../../../../CortexM3_Eval.srcs/sim_1/new/M3_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

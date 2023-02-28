@@ -1,0 +1,48 @@
+Dependencies for Project 'cm3', Target 'Target 1': (DO NOT MODIFY !)
+F (.\code\core_cm3.h)(0x60887C8E)()
+F (.\code\core_cmFunc.h)(0x60887C8E)()
+F (.\code\core_cmInstr.h)(0x60887C8E)()
+F (.\code\CortexM3.h)(0x63C15CEF)()
+F (.\code\CortexM3_driver.c)(0x63C13D44)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-ID:\APP\KEIL\ARM\PACK\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM3\Include-ID:\APP\KEIL\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DCMSDK_CM3-o .\cortexm3_driver.o --omf_browse .\cortexm3_driver.crf --depend .\cortexm3_driver.d)
+I (code\CortexM3_driver.h)(0x63C13D44)
+I (code\CortexM3.h)(0x63C15CEF)
+I (D:\APP\KEIL\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (D:\APP\KEIL\ARM\ARMCC\include\stdio.h)(0x588B8344)
+I (code\core_cm3.h)(0x60887C8E)
+I (code\core_cmInstr.h)(0x60887C8E)
+I (code\core_cmFunc.h)(0x60887C8E)
+I (D:\APP\KEIL\ARM\ARMCC\include\string.h)(0x588B8344)
+F (.\code\CortexM3_driver.h)(0x63C13D44)()
+F (.\code\handler.c)(0x63C15E47)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-ID:\APP\KEIL\ARM\PACK\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM3\Include-ID:\APP\KEIL\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DCMSDK_CM3-o .\handler.o --omf_browse .\handler.crf --depend .\handler.d)
+I (code\CortexM3.h)(0x63C15CEF)
+I (D:\APP\KEIL\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (D:\APP\KEIL\ARM\ARMCC\include\stdio.h)(0x588B8344)
+I (code\core_cm3.h)(0x60887C8E)
+I (code\core_cmInstr.h)(0x60887C8E)
+I (code\core_cmFunc.h)(0x60887C8E)
+I (code\CortexM3_driver.h)(0x63C13D44)
+F (.\code\main.c)(0x63C15DB8)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-ID:\APP\KEIL\ARM\PACK\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM3\Include-ID:\APP\KEIL\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DCMSDK_CM3-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+I (code\CortexM3.h)(0x63C15CEF)
+I (D:\APP\KEIL\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (D:\APP\KEIL\ARM\ARMCC\include\stdio.h)(0x588B8344)
+I (code\core_cm3.h)(0x60887C8E)
+I (code\core_cmInstr.h)(0x60887C8E)
+I (code\core_cmFunc.h)(0x60887C8E)
+I (code\CortexM3_driver.h)(0x63C13D44)
+F (.\code\Retarget.c)(0x63C103A0)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-ID:\APP\KEIL\ARM\PACK\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM3\Include-ID:\APP\KEIL\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DCMSDK_CM3-o .\retarget.o --omf_browse .\retarget.crf --depend .\retarget.d)
+I (D:\APP\KEIL\ARM\ARMCC\include\stdio.h)(0x588B8344)
+I (code\CortexM3_driver.h)(0x63C13D44)
+I (code\CortexM3.h)(0x63C15CEF)
+I (D:\APP\KEIL\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (code\core_cm3.h)(0x60887C8E)
+I (code\core_cmInstr.h)(0x60887C8E)
+I (code\core_cmFunc.h)(0x60887C8E)
+F (.\code\startup_CM3DS.s)(0x63C14D82)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Target_1-ID:\APP\KEIL\ARM\PACK\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM3\Include-ID:\APP\KEIL\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 524" --pd "CMSDK_CM3 SETA 1"--list .\listings\startup_cm3ds.lst --xref -o .\startup_cm3ds.o --depend .\startup_cm3ds.d)
+F (.\code\system.c)(0x63C15DB8)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-ID:\APP\KEIL\ARM\PACK\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM3\Include-ID:\APP\KEIL\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DCMSDK_CM3-o .\system.o --omf_browse .\system.crf --depend .\system.d)
+I (code\CortexM3.h)(0x63C15CEF)
+I (D:\APP\KEIL\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (D:\APP\KEIL\ARM\ARMCC\include\stdio.h)(0x588B8344)
+I (code\core_cm3.h)(0x60887C8E)
+I (code\core_cmInstr.h)(0x60887C8E)
+I (code\core_cmFunc.h)(0x60887C8E)
+I (code\CortexM3_driver.h)(0x63C13D44)

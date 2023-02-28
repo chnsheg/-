@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Feb 23 19:26:49 2023
+# Process ID: 25172
+# Current directory: D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.sim/sim_1/behav/xsim/xsim.dir/M3_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.sim/sim_1/behav/xsim/xsim.dir/M3_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 92.461 ; gain = 0.000
+INFO: [Common 17-206] Exiting Webtalk at Thu Feb 23 19:26:56 2023...

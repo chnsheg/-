@@ -1,0 +1,160 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Feb 19 09:32:46 2023
+# Process ID: 24812
+# Current directory: D:/FPGA/ARM_SPI/CortexM3_Eval
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19608 D:\FPGA\ARM_SPI\CortexM3_Eval\CortexM3_Eval.xpr
+# Log file: D:/FPGA/ARM_SPI/CortexM3_Eval/vivado.log
+# Journal file: D:/FPGA/ARM_SPI/CortexM3_Eval\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {EXP[0]}]]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+set_property is_loc_fixed false [get_ports [list  {ledOut[3]} {ledOut[2]} {ledOut[1]} {ledOut[0]}]]
+place_ports {EXP[0]} D16
+place_ports {EXP[1]} D15
+place_ports {EXP[2]} A21
+place_ports {EXP[3]} C22
+place_ports {EXP[4]} C20
+place_ports {EXP[5]} A20
+place_ports {EXP[6]} C19
+place_ports {EXP[7]} B16
+place_ports {EXP[8]} C15
+place_ports {EXP[9]} B13
+place_ports {EXP[10]} AA18
+startgroup
+set_property package_pin "" [get_ports [list  {EXP[14]}]]
+place_ports {EXP[11]} U17
+endgroup
+place_ports {EXP[12]} V17
+place_ports {EXP[13]} R17
+place_ports {EXP[14]} P15
+place_ports {EXP[15]} N17
+set_property is_loc_fixed false [get_ports [list  {EXP[15]} {EXP[14]} {EXP[13]} {EXP[12]} {EXP[11]} {EXP[10]} {EXP[9]} {EXP[8]} {EXP[7]} {EXP[6]} {EXP[5]} {EXP[4]} {EXP[3]} {EXP[2]} {EXP[1]} {EXP[0]}]]
+set_property is_loc_fixed true [get_ports [list  {EXP[15]} {EXP[14]} {EXP[13]} {EXP[12]} {EXP[11]} {EXP[10]} {EXP[9]} {EXP[8]} {EXP[7]} {EXP[6]} {EXP[5]} {EXP[4]} {EXP[3]} {EXP[2]} {EXP[1]} {EXP[0]}]]
+set_property is_loc_fixed false [get_ports [list  {EXP[15]} {EXP[14]} {EXP[13]} {EXP[12]} {EXP[11]} {EXP[10]} {EXP[9]} {EXP[8]} {EXP[7]} {EXP[6]} {EXP[5]} {EXP[4]} {EXP[3]} {EXP[2]} {EXP[1]} {EXP[0]}]]
+set_property is_loc_fixed true [get_ports [list  {EXP[15]} {EXP[14]} {EXP[13]} {EXP[12]} {EXP[11]} {EXP[10]} {EXP[9]} {EXP[8]} {EXP[7]} {EXP[6]} {EXP[5]} {EXP[4]} {EXP[3]} {EXP[2]} {EXP[1]} {EXP[0]}]]
+set_property is_loc_fixed false [get_ports [list  {EXP[15]} {EXP[14]} {EXP[13]} {EXP[12]} {EXP[11]} {EXP[10]} {EXP[9]} {EXP[8]} {EXP[7]} {EXP[6]} {EXP[5]} {EXP[4]} {EXP[3]} {EXP[2]} {EXP[1]} {EXP[0]}]]
+set_property is_loc_fixed true [get_ports [list  {EXP[15]} {EXP[14]} {EXP[13]} {EXP[12]} {EXP[11]} {EXP[10]} {EXP[9]} {EXP[8]} {EXP[7]} {EXP[6]} {EXP[5]} {EXP[4]} {EXP[3]} {EXP[2]} {EXP[1]} {EXP[0]}]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_design
+reset_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+place_ports {EXP[0]} V9
+place_ports {EXP[1]} Y8
+place_ports {EXP[2]} Y7
+place_ports {EXP[3]} W7
+place_ports {EXP[4]} D16
+place_ports {EXP[5]} D15
+place_ports {EXP[6]} A21
+place_ports {EXP[7]} C22
+place_ports {EXP[8]} C19
+place_ports {EXP[9]} B16
+place_ports {EXP[10]} C15
+place_ports {EXP[11]} B13
+place_ports {EXP[12]} A18
+place_ports {EXP[8]} C20
+place_ports {EXP[9]} A20
+place_ports {EXP[10]} C19
+place_ports {EXP[11]} B16
+place_ports {EXP[12]} C15
+place_ports {EXP[13]} B13
+place_ports {EXP[14]} A18
+place_ports {EXP[15]} U17
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
+open_hw_manager
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+place_ports {ledOut[3]} E16
+startgroup
+set_property package_pin "" [get_ports [list  {ledOut[3]}]]
+place_ports {ledOut[0]} E16
+endgroup
+place_ports {ledOut[1]} D14
+place_ports {ledOut[2]} B21
+place_ports {ledOut[3]} B20
+set_property is_loc_fixed false [get_ports [list  {ledOut[3]} {ledOut[2]} {ledOut[1]} {ledOut[0]}]]
+set_property is_loc_fixed true [get_ports [list  {ledOut[3]} {ledOut[2]} {ledOut[1]} {ledOut[0]}]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+connect_hw_server -allow_non_jtag
+open_hw_target
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.runs/impl_1/ARM_SOC_TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+open_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.runs/impl_1/ARM_SOC_TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.runs/impl_1/ARM_SOC_TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.runs/impl_1/ARM_SOC_TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

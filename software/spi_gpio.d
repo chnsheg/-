@@ -1,0 +1,9 @@
+.\spi_gpio.o: Peripheral\spi_gpio.c
+.\spi_gpio.o: Peripheral\spi_gpio.h
+.\spi_gpio.o: .\code\CortexM3_driver.h
+.\spi_gpio.o: .\code\CortexM3.h
+.\spi_gpio.o: C:\keil5\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\spi_gpio.o: C:\keil5\keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\spi_gpio.o: .\code\core_cm3.h
+.\spi_gpio.o: .\code\core_cmInstr.h
+.\spi_gpio.o: .\code\core_cmFunc.h

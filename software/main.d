@@ -1,0 +1,9 @@
+.\main.o: code\main.c
+.\main.o: code\CortexM3.h
+.\main.o: C:\keil5\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\main.o: C:\keil5\keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\main.o: code\core_cm3.h
+.\main.o: code\core_cmInstr.h
+.\main.o: code\core_cmFunc.h
+.\main.o: code\CortexM3_driver.h
+.\main.o: .\Peripheral\spi_gpio.h

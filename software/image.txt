@@ -1,0 +1,1004 @@
+
+========================================================================
+
+** ELF Header Information
+
+    File Name: .\cm3.axf
+
+    Machine class: ELFCLASS32 (32-bit)
+    Data encoding: ELFDATA2LSB (Little endian)
+    Header version: EV_CURRENT (Current version)
+    Operating System ABI: none
+    ABI Version: 0
+    File Type: ET_EXEC (Executable) (2)
+    Machine: EM_ARM (ARM)
+
+    Image Entry point: 0x00000069
+    Flags: EF_ARM_HASENTRY + EF_ARM_ABI_FLOAT_SOFT (0x05000202)
+
+    ARM ELF revision: 5 (ABI version 2)
+
+    Conforms to Soft float procedure-call standard
+
+    Built with
+    Component: ARM Compiler 5.06 update 7 (build 960) Tool: armasm [4d35fa]
+    Component: ARM Compiler 5.06 update 7 (build 960) Tool: armlink [4d3601]
+
+    Header size: 52 bytes (0x34)
+    Program header entry size: 32 bytes (0x20)
+    Section header entry size: 40 bytes (0x28)
+
+    Program header entries: 1
+    Section header entries: 16
+
+    Program header offset: 65416 (0x0000ff88)
+    Section header offset: 65448 (0x0000ffa8)
+
+    Section header string table index: 15
+
+========================================================================
+
+** Program header #0
+
+    Type          : PT_LOAD (1)
+    File Offset   : 52 (0x34)
+    Virtual Addr  : 0x00000000
+    Physical Addr : 0x00000000
+    Size in file  : 1160 bytes (0x488)
+    Size in memory: 33928 bytes (0x8488)
+    Flags         : PF_X + PF_W + PF_R + PF_ARM_ENTRY (0x80000007)
+    Alignment     : 8
+
+
+========================================================================
+
+** Section #1
+
+    Name        : ER_RO
+    Type        : SHT_PROGBITS (0x00000001)
+    Flags       : SHF_ALLOC + SHF_EXECINSTR (0x00000006)
+    Addr        : 0x00000000
+    File Offset : 52 (0x34)
+    Size        : 1152 bytes (0x480)
+    Link        : SHN_UNDEF
+    Info        : 0
+    Alignment   : 4
+    Entry Size  : 0
+
+    $d.realdata
+    RESET
+    __Vectors
+        0x00000000:    20008008    ...     DCD    536903688
+        0x00000004:    00000069    i...    DCD    105
+        0x00000008:    00000071    q...    DCD    113
+        0x0000000c:    00000079    y...    DCD    121
+        0x00000010:    00000081    ....    DCD    129
+        0x00000014:    00000089    ....    DCD    137
+        0x00000018:    00000091    ....    DCD    145
+        0x0000001c:    00000000    ....    DCD    0
+        0x00000020:    00000000    ....    DCD    0
+        0x00000024:    00000000    ....    DCD    0
+        0x00000028:    00000000    ....    DCD    0
+        0x0000002c:    00000099    ....    DCD    153
+        0x00000030:    000000a1    ....    DCD    161
+        0x00000034:    00000000    ....    DCD    0
+        0x00000038:    000000a9    ....    DCD    169
+        0x0000003c:    0000028d    ....    DCD    653
+        0x00000040:    000000b9    ....    DCD    185
+        0x00000044:    000000c1    ....    DCD    193
+        0x00000048:    000000c9    ....    DCD    201
+        0x0000004c:    000000d1    ....    DCD    209
+    $t
+    .ARM.Collect$$$$00000000
+    .ARM.Collect$$$$00000001
+    __Vectors_End
+    __main
+    _main_stk
+        0x00000050:    f8dfd010    ....    LDR      sp,__lit__00000000 ; [0x64] = 0x20008008
+    .ARM.Collect$$$$00000004
+    _main_scatterload
+        0x00000054:    f000f84c    ..L.    BL       __scatterload ; 0xf0
+    .ARM.Collect$$$$00000008
+    .ARM.Collect$$$$0000000A
+    .ARM.Collect$$$$0000000B
+    __main_after_scatterload
+    _main_clock
+    _main_cpp_init
+    _main_init
+        0x00000058:    4800        .H      LDR      r0,[pc,#0] ; [0x5c] = 0x389
+        0x0000005a:    4700        .G      BX       r0
+    $d
+        0x0000005c:    00000389    ....    DCD    905
+    $t
+    .ARM.Collect$$$$0000000E
+    __rt_lib_shutdown_fini
+        0x00000060:    f3af8000    ....    NOP.W    
+    $d
+    .ARM.Collect$$$$00002712
+    __lit__00000000
+    .ARM.Collect$$$$0000000F
+    .ARM.Collect$$$$00000011
+    __rt_final_cpp
+    __rt_final_exit
+        0x00000064:    20008008    ...     DCD    536903688
+    $t
+    .text
+    Reset_Handler
+        0x00000068:    481b        .H      LDR      r0,[pc,#108] ; [0xd8] = 0x29d
+        0x0000006a:    4780        .G      BLX      r0
+        0x0000006c:    481b        .H      LDR      r0,[pc,#108] ; [0xdc] = 0x51
+        0x0000006e:    4700        .G      BX       r0
+    NMI_Handler
+        0x00000070:    b500        ..      PUSH     {lr}
+        0x00000072:    f000f8cc    ....    BL       NMIHandler ; 0x20e
+        0x00000076:    bd00        ..      POP      {pc}
+    HardFault_Handler
+        0x00000078:    b500        ..      PUSH     {lr}
+        0x0000007a:    f000f86b    ..k.    BL       HardFaultHandler ; 0x154
+        0x0000007e:    bd00        ..      POP      {pc}
+    MemManage_Handler
+        0x00000080:    b500        ..      PUSH     {lr}
+        0x00000082:    f000f8c3    ....    BL       MemManageHandler ; 0x20c
+        0x00000086:    bd00        ..      POP      {pc}
+    BusFault_Handler
+        0x00000088:    b500        ..      PUSH     {lr}
+        0x0000008a:    f000f843    ..C.    BL       BusFaultHandler ; 0x114
+        0x0000008e:    bd00        ..      POP      {pc}
+    UsageFault_Handler
+        0x00000090:    b500        ..      PUSH     {lr}
+        0x00000092:    f000f942    ..B.    BL       UsageFaultHandler ; 0x31a
+        0x00000096:    bd00        ..      POP      {pc}
+    SVC_Handler
+        0x00000098:    b500        ..      PUSH     {lr}
+        0x0000009a:    f000f8dc    ....    BL       SVCHandler ; 0x256
+        0x0000009e:    bd00        ..      POP      {pc}
+    DebugMon_Handler
+        0x000000a0:    b500        ..      PUSH     {lr}
+        0x000000a2:    f000f838    ..8.    BL       DebugMonHandler ; 0x116
+        0x000000a6:    bd00        ..      POP      {pc}
+    PendSV_Handler
+        0x000000a8:    b500        ..      PUSH     {lr}
+        0x000000aa:    f000f8b1    ....    BL       PendSVHandler ; 0x210
+        0x000000ae:    bd00        ..      POP      {pc}
+        0x000000b0:    b500        ..      PUSH     {lr}
+        0x000000b2:    f000f8dd    ....    BL       SysTickHandler ; 0x270
+        0x000000b6:    bd00        ..      POP      {pc}
+    UARTRX_Handler
+        0x000000b8:    b500        ..      PUSH     {lr}
+        0x000000ba:    f000f915    ....    BL       UARTRXHandler ; 0x2e8
+        0x000000be:    bd00        ..      POP      {pc}
+    UARTTX_Handler
+        0x000000c0:    b500        ..      PUSH     {lr}
+        0x000000c2:    f000f929    ..).    BL       UARTTXHandler ; 0x318
+        0x000000c6:    bd00        ..      POP      {pc}
+    UARTOVR_Handler
+        0x000000c8:    b500        ..      PUSH     {lr}
+        0x000000ca:    f000f90b    ....    BL       UARTOVRHandler ; 0x2e4
+        0x000000ce:    bd00        ..      POP      {pc}
+    KEY_Handler
+        0x000000d0:    b500        ..      PUSH     {lr}
+        0x000000d2:    f000f840    ..@.    BL       KEYHandler ; 0x156
+        0x000000d6:    bd00        ..      POP      {pc}
+    $d
+        0x000000d8:    0000029d    ....    DCD    669
+        0x000000dc:    00000051    Q...    DCD    81
+    $t
+    .text
+    strlen
+        0x000000e0:    1c42        B.      ADDS     r2,r0,#1
+        0x000000e2:    f8101b01    ....    LDRB     r1,[r0],#1
+        0x000000e6:    2900        .)      CMP      r1,#0
+        0x000000e8:    d1fb        ..      BNE      0xe2 ; strlen + 2
+        0x000000ea:    1a80        ..      SUBS     r0,r0,r2
+        0x000000ec:    4770        pG      BX       lr
+        0x000000ee:    0000        ..      MOVS     r0,r0
+    .text
+    __scatterload
+    __scatterload_rt2
+        0x000000f0:    4c06        .L      LDR      r4,[pc,#24] ; [0x10c] = 0x460
+        0x000000f2:    4d07        .M      LDR      r5,[pc,#28] ; [0x110] = 0x480
+        0x000000f4:    e006        ..      B        0x104 ; __scatterload + 20
+        0x000000f6:    68e0        .h      LDR      r0,[r4,#0xc]
+        0x000000f8:    f0400301    @...    ORR      r3,r0,#1
+        0x000000fc:    e8940007    ....    LDM      r4,{r0-r2}
+        0x00000100:    4798        .G      BLX      r3
+        0x00000102:    3410        .4      ADDS     r4,r4,#0x10
+        0x00000104:    42ac        .B      CMP      r4,r5
+        0x00000106:    d3f6        ..      BCC      0xf6 ; __scatterload + 6
+        0x00000108:    f7ffffa6    ....    BL       __main_after_scatterload ; 0x58
+    $d
+        0x0000010c:    00000460    `...    DCD    1120
+        0x00000110:    00000480    ....    DCD    1152
+    $t
+    i.BusFaultHandler
+    BusFaultHandler
+        0x00000114:    4770        pG      BX       lr
+    i.DebugMonHandler
+    DebugMonHandler
+        0x00000116:    4770        pG      BX       lr
+    i.GPIO_Init
+    GPIO_Init
+        0x00000118:    b510        ..      PUSH     {r4,lr}
+        0x0000011a:    788b        .x      LDRB     r3,[r1,#2]
+        0x0000011c:    880a        ..      LDRH     r2,[r1,#0]
+        0x0000011e:    2b01        .+      CMP      r3,#1
+        0x00000120:    d004        ..      BEQ      0x12c ; GPIO_Init + 20
+        0x00000122:    2b02        .+      CMP      r3,#2
+        0x00000124:    d004        ..      BEQ      0x130 ; GPIO_Init + 24
+        0x00000126:    2b04        .+      CMP      r3,#4
+        0x00000128:    d10a        ..      BNE      0x140 ; GPIO_Init + 40
+        0x0000012a:    e005        ..      B        0x138 ; GPIO_Init + 32
+        0x0000012c:    6142        Ba      STR      r2,[r0,#0x14]
+        0x0000012e:    e007        ..      B        0x140 ; GPIO_Init + 40
+        0x00000130:    6904        .i      LDR      r4,[r0,#0x10]
+        0x00000132:    4314        .C      ORRS     r4,r4,r2
+        0x00000134:    6104        .a      STR      r4,[r0,#0x10]
+        0x00000136:    e003        ..      B        0x140 ; GPIO_Init + 40
+        0x00000138:    6984        .i      LDR      r4,[r0,#0x18]
+        0x0000013a:    4314        .C      ORRS     r4,r4,r2
+        0x0000013c:    6184        .a      STR      r4,[r0,#0x18]
+        0x0000013e:    bf00        ..      NOP      
+        0x00000140:    bf00        ..      NOP      
+        0x00000142:    bd10        ..      POP      {r4,pc}
+    i.GPIO_ResetBits
+    GPIO_ResetBits
+        0x00000144:    6842        Bh      LDR      r2,[r0,#4]
+        0x00000146:    438a        .C      BICS     r2,r2,r1
+        0x00000148:    6042        B`      STR      r2,[r0,#4]
+        0x0000014a:    4770        pG      BX       lr
+    i.GPIO_SetBits
+    GPIO_SetBits
+        0x0000014c:    6842        Bh      LDR      r2,[r0,#4]
+        0x0000014e:    430a        .C      ORRS     r2,r2,r1
+        0x00000150:    6042        B`      STR      r2,[r0,#4]
+        0x00000152:    4770        pG      BX       lr
+    i.HardFaultHandler
+    HardFaultHandler
+        0x00000154:    4770        pG      BX       lr
+    i.KEYHandler
+    KEYHandler
+        0x00000156:    b510        ..      PUSH     {r4,lr}
+        0x00000158:    2001        .       MOVS     r0,#1
+        0x0000015a:    f000f929    ..).    BL       send2LED ; 0x3b0
+        0x0000015e:    bd10        ..      POP      {r4,pc}
+    i.Master_SPI_WR_Byte
+    Master_SPI_WR_Byte
+        0x00000160:    b570        p.      PUSH     {r4-r6,lr}
+        0x00000162:    4604        .F      MOV      r4,r0
+        0x00000164:    2600        .&      MOVS     r6,#0
+        0x00000166:    2500        .%      MOVS     r5,#0
+        0x00000168:    2110        .!      MOVS     r1,#0x10
+        0x0000016a:    f04f40a0    O..@    MOV      r0,#0x50000000
+        0x0000016e:    f7ffffe9    ....    BL       GPIO_ResetBits ; 0x144
+        0x00000172:    bf00        ..      NOP      
+        0x00000174:    e026        &.      B        0x1c4 ; Master_SPI_WR_Byte + 100
+        0x00000176:    f0040080    ....    AND      r0,r4,#0x80
+        0x0000017a:    b128        (.      CBZ      r0,0x188 ; Master_SPI_WR_Byte + 40
+        0x0000017c:    2180        .!      MOVS     r1,#0x80
+        0x0000017e:    f04f40a0    O..@    MOV      r0,#0x50000000
+        0x00000182:    f7ffffe3    ....    BL       GPIO_SetBits ; 0x14c
+        0x00000186:    e004        ..      B        0x192 ; Master_SPI_WR_Byte + 50
+        0x00000188:    2180        .!      MOVS     r1,#0x80
+        0x0000018a:    f04f40a0    O..@    MOV      r0,#0x50000000
+        0x0000018e:    f7ffffd9    ....    BL       GPIO_ResetBits ; 0x144
+        0x00000192:    0660        `.      LSLS     r0,r4,#25
+        0x00000194:    0e04        ..      LSRS     r4,r0,#24
+        0x00000196:    2003        .       MOVS     r0,#3
+        0x00000198:    f000f8eb    ....    BL       delay_us ; 0x372
+        0x0000019c:    2120         !      MOVS     r1,#0x20
+        0x0000019e:    f04f40a0    O..@    MOV      r0,#0x50000000
+        0x000001a2:    f7ffffd3    ....    BL       GPIO_SetBits ; 0x14c
+        0x000001a6:    2002        .       MOVS     r0,#2
+        0x000001a8:    f000f8e3    ....    BL       delay_us ; 0x372
+        0x000001ac:    0668        h.      LSLS     r0,r5,#25
+        0x000001ae:    0e05        ..      LSRS     r5,r0,#24
+        0x000001b0:    2001        .       MOVS     r0,#1
+        0x000001b2:    f000f8de    ....    BL       delay_us ; 0x372
+        0x000001b6:    2120         !      MOVS     r1,#0x20
+        0x000001b8:    f04f40a0    O..@    MOV      r0,#0x50000000
+        0x000001bc:    f7ffffc2    ....    BL       GPIO_ResetBits ; 0x144
+        0x000001c0:    1c70        p.      ADDS     r0,r6,#1
+        0x000001c2:    b2c6        ..      UXTB     r6,r0
+        0x000001c4:    2e08        ..      CMP      r6,#8
+        0x000001c6:    dbd6        ..      BLT      0x176 ; Master_SPI_WR_Byte + 22
+        0x000001c8:    2110        .!      MOVS     r1,#0x10
+        0x000001ca:    f04f40a0    O..@    MOV      r0,#0x50000000
+        0x000001ce:    f7ffffbd    ....    BL       GPIO_SetBits ; 0x14c
+        0x000001d2:    4628        (F      MOV      r0,r5
+        0x000001d4:    bd70        p.      POP      {r4-r6,pc}
+    i.Master_SPI_WR_String
+    Master_SPI_WR_String
+        0x000001d6:    b570        p.      PUSH     {r4-r6,lr}
+        0x000001d8:    4604        .F      MOV      r4,r0
+        0x000001da:    460d        .F      MOV      r5,r1
+        0x000001dc:    4616        .F      MOV      r6,r2
+        0x000001de:    2110        .!      MOVS     r1,#0x10
+        0x000001e0:    f04f40a0    O..@    MOV      r0,#0x50000000
+        0x000001e4:    f7ffffae    ....    BL       GPIO_ResetBits ; 0x144
+        0x000001e8:    e005        ..      B        0x1f6 ; Master_SPI_WR_String + 32
+        0x000001ea:    7828        (x      LDRB     r0,[r5,#0]
+        0x000001ec:    f7ffffb8    ....    BL       Master_SPI_WR_Byte ; 0x160
+        0x000001f0:    7020         p      STRB     r0,[r4,#0]
+        0x000001f2:    1c64        d.      ADDS     r4,r4,#1
+        0x000001f4:    1c6d        m.      ADDS     r5,r5,#1
+        0x000001f6:    1e30        0.      SUBS     r0,r6,#0
+        0x000001f8:    f1a60101    ....    SUB      r1,r6,#1
+        0x000001fc:    b28e        ..      UXTH     r6,r1
+        0x000001fe:    d1f4        ..      BNE      0x1ea ; Master_SPI_WR_String + 20
+        0x00000200:    2110        .!      MOVS     r1,#0x10
+        0x00000202:    f04f40a0    O..@    MOV      r0,#0x50000000
+        0x00000206:    f7ffffa1    ....    BL       GPIO_SetBits ; 0x14c
+        0x0000020a:    bd70        p.      POP      {r4-r6,pc}
+    i.MemManageHandler
+    MemManageHandler
+        0x0000020c:    4770        pG      BX       lr
+    i.NMIHandler
+    NMIHandler
+        0x0000020e:    4770        pG      BX       lr
+    i.PendSVHandler
+    PendSVHandler
+        0x00000210:    4770        pG      BX       lr
+    i.SPI_GPIO_Init
+    SPI_GPIO_Init
+        0x00000212:    b508        ..      PUSH     {r3,lr}
+        0x00000214:    20b0        .       MOVS     r0,#0xb0
+        0x00000216:    f8ad0000    ....    STRH     r0,[sp,#0]
+        0x0000021a:    2002        .       MOVS     r0,#2
+        0x0000021c:    f88d0002    ....    STRB     r0,[sp,#2]
+        0x00000220:    4669        iF      MOV      r1,sp
+        0x00000222:    f04f40a0    O..@    MOV      r0,#0x50000000
+        0x00000226:    f7ffff77    ..w.    BL       GPIO_Init ; 0x118
+        0x0000022a:    2040        @       MOVS     r0,#0x40
+        0x0000022c:    f8ad0000    ....    STRH     r0,[sp,#0]
+        0x00000230:    2001        .       MOVS     r0,#1
+        0x00000232:    f88d0002    ....    STRB     r0,[sp,#2]
+        0x00000236:    4669        iF      MOV      r1,sp
+        0x00000238:    f04f40a0    O..@    MOV      r0,#0x50000000
+        0x0000023c:    f7ffff6c    ..l.    BL       GPIO_Init ; 0x118
+        0x00000240:    2110        .!      MOVS     r1,#0x10
+        0x00000242:    f04f40a0    O..@    MOV      r0,#0x50000000
+        0x00000246:    f7ffff81    ....    BL       GPIO_SetBits ; 0x14c
+        0x0000024a:    2120         !      MOVS     r1,#0x20
+        0x0000024c:    f04f40a0    O..@    MOV      r0,#0x50000000
+        0x00000250:    f7ffff78    ..x.    BL       GPIO_ResetBits ; 0x144
+        0x00000254:    bd08        ..      POP      {r3,pc}
+    i.SVCHandler
+    SVCHandler
+        0x00000256:    4770        pG      BX       lr
+    i.Set_SysTick_CTRL
+    Set_SysTick_CTRL
+        0x00000258:    f04f21e0    O..!    MOV      r1,#0xe000e000
+        0x0000025c:    6108        .a      STR      r0,[r1,#0x10]
+        0x0000025e:    4770        pG      BX       lr
+    i.Set_SysTick_LOAD
+    Set_SysTick_LOAD
+        0x00000260:    f04f21e0    O..!    MOV      r1,#0xe000e000
+        0x00000264:    6148        Ha      STR      r0,[r1,#0x14]
+        0x00000266:    4770        pG      BX       lr
+    i.Set_SysTick_VALUE
+    Set_SysTick_VALUE
+        0x00000268:    f04f21e0    O..!    MOV      r1,#0xe000e000
+        0x0000026c:    6188        .a      STR      r0,[r1,#0x18]
+        0x0000026e:    4770        pG      BX       lr
+    i.SysTickHandler
+    SysTickHandler
+        0x00000270:    b510        ..      PUSH     {r4,lr}
+        0x00000272:    2000        .       MOVS     r0,#0
+        0x00000274:    f7fffff0    ....    BL       Set_SysTick_CTRL ; 0x258
+        0x00000278:    4803        .H      LDR      r0,[pc,#12] ; [0x288] = 0xe000ed04
+        0x0000027a:    6800        .h      LDR      r0,[r0,#0]
+        0x0000027c:    f0407000    @..p    ORR      r0,r0,#0x2000000
+        0x00000280:    4901        .I      LDR      r1,[pc,#4] ; [0x288] = 0xe000ed04
+        0x00000282:    6008        .`      STR      r0,[r1,#0]
+        0x00000284:    bd10        ..      POP      {r4,pc}
+    $d
+        0x00000286:    0000        ..      DCW    0
+        0x00000288:    e000ed04    ....    DCD    3758157060
+    $t
+    i.SysTick_Handler
+    SysTick_Handler
+        0x0000028c:    4802        .H      LDR      r0,[pc,#8] ; [0x298] = 0x20000000
+        0x0000028e:    6800        .h      LDR      r0,[r0,#0]
+        0x00000290:    1c40        @.      ADDS     r0,r0,#1
+        0x00000292:    4901        .I      LDR      r1,[pc,#4] ; [0x298] = 0x20000000
+        0x00000294:    6008        .`      STR      r0,[r1,#0]
+        0x00000296:    4770        pG      BX       lr
+    $d
+        0x00000298:    20000000    ...     DCD    536870912
+    $t
+    i.SystemInit
+    SystemInit
+        0x0000029c:    b51f        ..      PUSH     {r0-r4,lr}
+        0x0000029e:    480f        .H      LDR      r0,[pc,#60] ; [0x2dc] = 0x2faf080
+        0x000002a0:    490f        .I      LDR      r1,[pc,#60] ; [0x2e0] = 0x20000004
+        0x000002a2:    6008        .`      STR      r0,[r1,#0]
+        0x000002a4:    2001        .       MOVS     r0,#1
+        0x000002a6:    2101        .!      MOVS     r1,#1
+        0x000002a8:    4081        .@      LSLS     r1,r1,r0
+        0x000002aa:    0942        B.      LSRS     r2,r0,#5
+        0x000002ac:    0092        ..      LSLS     r2,r2,#2
+        0x000002ae:    f10222e0    ..."    ADD      r2,r2,#0xe000e000
+        0x000002b2:    f8c21100    ....    STR      r1,[r2,#0x100]
+        0x000002b6:    bf00        ..      NOP      
+        0x000002b8:    4809        .H      LDR      r0,[pc,#36] ; [0x2e0] = 0x20000004
+        0x000002ba:    6800        .h      LDR      r0,[r0,#0]
+        0x000002bc:    f44f31e1    O..1    MOV      r1,#0x1c200
+        0x000002c0:    fbb0f4f1    ....    UDIV     r4,r0,r1
+        0x000002c4:    2000        .       MOVS     r0,#0
+        0x000002c6:    9000        ..      STR      r0,[sp,#0]
+        0x000002c8:    9001        ..      STR      r0,[sp,#4]
+        0x000002ca:    9002        ..      STR      r0,[sp,#8]
+        0x000002cc:    2301        .#      MOVS     r3,#1
+        0x000002ce:    461a        .F      MOV      r2,r3
+        0x000002d0:    4621        !F      MOV      r1,r4
+        0x000002d2:    9003        ..      STR      r0,[sp,#0xc]
+        0x000002d4:    0798        ..      LSLS     r0,r3,#30
+        0x000002d6:    f000f896    ....    BL       uart_init ; 0x406
+        0x000002da:    bd1f        ..      POP      {r0-r4,pc}
+    $d
+        0x000002dc:    02faf080    ....    DCD    50000000
+        0x000002e0:    20000004    ...     DCD    536870916
+    $t
+    i.UARTOVRHandler
+    UARTOVRHandler
+        0x000002e4:    4770        pG      BX       lr
+        0x000002e6:    0000        ..      MOVS     r0,r0
+    i.UARTRXHandler
+    UARTRXHandler
+        0x000002e8:    b510        ..      PUSH     {r4,lr}
+        0x000002ea:    f04f4080    O..@    MOV      r0,#0x40000000
+        0x000002ee:    f000f865    ..e.    BL       uart_ReceiveChar ; 0x3bc
+        0x000002f2:    4604        .F      MOV      r4,r0
+        0x000002f4:    4620         F      MOV      r0,r4
+        0x000002f6:    f000f85b    ..[.    BL       send2LED ; 0x3b0
+        0x000002fa:    a006        ..      ADR      r0,{pc}+0x1a ; 0x314
+        0x000002fc:    f000f872    ..r.    BL       uart_SendString ; 0x3e4
+        0x00000300:    4621        !F      MOV      r1,r4
+        0x00000302:    f04f4080    O..@    MOV      r0,#0x40000000
+        0x00000306:    f000f863    ..c.    BL       uart_SendChar ; 0x3d0
+        0x0000030a:    210a        .!      MOVS     r1,#0xa
+        0x0000030c:    0748        H.      LSLS     r0,r1,#29
+        0x0000030e:    f000f85f    .._.    BL       uart_SendChar ; 0x3d0
+        0x00000312:    bd10        ..      POP      {r4,pc}
+    $d
+        0x00000314:    003a334d    M3:.    DCD    3814221
+    $t
+    i.UARTTXHandler
+    UARTTXHandler
+        0x00000318:    4770        pG      BX       lr
+    i.UsageFaultHandler
+    UsageFaultHandler
+        0x0000031a:    4770        pG      BX       lr
+    i.__scatterload_copy
+    __scatterload_copy
+        0x0000031c:    e002        ..      B        0x324 ; __scatterload_copy + 8
+        0x0000031e:    c808        ..      LDM      r0!,{r3}
+        0x00000320:    1f12        ..      SUBS     r2,r2,#4
+        0x00000322:    c108        ..      STM      r1!,{r3}
+        0x00000324:    2a00        .*      CMP      r2,#0
+        0x00000326:    d1fa        ..      BNE      0x31e ; __scatterload_copy + 2
+        0x00000328:    4770        pG      BX       lr
+    i.__scatterload_null
+    __scatterload_null
+        0x0000032a:    4770        pG      BX       lr
+    i.__scatterload_zeroinit
+    __scatterload_zeroinit
+        0x0000032c:    2000        .       MOVS     r0,#0
+        0x0000032e:    e001        ..      B        0x334 ; __scatterload_zeroinit + 8
+        0x00000330:    c101        ..      STM      r1!,{r0}
+        0x00000332:    1f12        ..      SUBS     r2,r2,#4
+        0x00000334:    2a00        .*      CMP      r2,#0
+        0x00000336:    d1fb        ..      BNE      0x330 ; __scatterload_zeroinit + 4
+        0x00000338:    4770        pG      BX       lr
+    i.delay
+    delay
+        0x0000033a:    b500        ..      PUSH     {lr}
+        0x0000033c:    4602        .F      MOV      r2,r0
+        0x0000033e:    2000        .       MOVS     r0,#0
+        0x00000340:    f7ffff8a    ....    BL       Set_SysTick_CTRL ; 0x258
+        0x00000344:    4610        .F      MOV      r0,r2
+        0x00000346:    f7ffff8b    ....    BL       Set_SysTick_LOAD ; 0x260
+        0x0000034a:    2000        .       MOVS     r0,#0
+        0x0000034c:    f7ffff8c    ....    BL       Set_SysTick_VALUE ; 0x268
+        0x00000350:    2007        .       MOVS     r0,#7
+        0x00000352:    f7ffff81    ....    BL       Set_SysTick_CTRL ; 0x258
+        0x00000356:    bf30        0.      WFI      
+        0x00000358:    bd00        ..      POP      {pc}
+    i.delay_1ms
+    delay_1ms
+        0x0000035a:    b500        ..      PUSH     {lr}
+        0x0000035c:    4603        .F      MOV      r3,r0
+        0x0000035e:    e003        ..      B        0x368 ; delay_1ms + 14
+        0x00000360:    f24c3050    L.P0    MOV      r0,#0xc350
+        0x00000364:    f7ffffe9    ....    BL       delay ; 0x33a
+        0x00000368:    1e18        ..      SUBS     r0,r3,#0
+        0x0000036a:    f1a30301    ....    SUB      r3,r3,#1
+        0x0000036e:    d1f7        ..      BNE      0x360 ; delay_1ms + 6
+        0x00000370:    bd00        ..      POP      {pc}
+    i.delay_us
+    delay_us
+        0x00000372:    b500        ..      PUSH     {lr}
+        0x00000374:    4603        .F      MOV      r3,r0
+        0x00000376:    e002        ..      B        0x37e ; delay_us + 12
+        0x00000378:    2032        2       MOVS     r0,#0x32
+        0x0000037a:    f7ffffde    ....    BL       delay ; 0x33a
+        0x0000037e:    1e18        ..      SUBS     r0,r3,#0
+        0x00000380:    f1a30301    ....    SUB      r3,r3,#1
+        0x00000384:    d1f8        ..      BNE      0x378 ; delay_us + 6
+        0x00000386:    bd00        ..      POP      {pc}
+    i.main
+    main
+        0x00000388:    b086        ..      SUB      sp,sp,#0x18
+        0x0000038a:    a407        ..      ADR      r4,{pc}+0x1e ; 0x3a8
+        0x0000038c:    f7ffff86    ....    BL       SystemInit ; 0x29c
+        0x00000390:    f7ffff3f    ..?.    BL       SPI_GPIO_Init ; 0x212
+        0x00000394:    e007        ..      B        0x3a6 ; main + 30
+        0x00000396:    2207        ."      MOVS     r2,#7
+        0x00000398:    4621        !F      MOV      r1,r4
+        0x0000039a:    a801        ..      ADD      r0,sp,#4
+        0x0000039c:    f7ffff1b    ....    BL       Master_SPI_WR_String ; 0x1d6
+        0x000003a0:    2064        d       MOVS     r0,#0x64
+        0x000003a2:    f7ffffda    ....    BL       delay_1ms ; 0x35a
+        0x000003a6:    e7f6        ..      B        0x396 ; main + 14
+    $d
+        0x000003a8:    2d4d5241    ARM-    DCD    760042049
+        0x000003ac:    00334d43    CM3.    DCD    3362115
+    $t
+    i.send2LED
+    send2LED
+        0x000003b0:    4901        .I      LDR      r1,[pc,#4] ; [0x3b8] = 0x40001000
+        0x000003b2:    6008        .`      STR      r0,[r1,#0]
+        0x000003b4:    4770        pG      BX       lr
+    $d
+        0x000003b6:    0000        ..      DCW    0
+        0x000003b8:    40001000    ...@    DCD    1073745920
+    $t
+    i.uart_ReceiveChar
+    uart_ReceiveChar
+        0x000003bc:    4601        .F      MOV      r1,r0
+        0x000003be:    bf00        ..      NOP      
+        0x000003c0:    6848        Hh      LDR      r0,[r1,#4]
+        0x000003c2:    f0000002    ....    AND      r0,r0,#2
+        0x000003c6:    2800        .(      CMP      r0,#0
+        0x000003c8:    d0fa        ..      BEQ      0x3c0 ; uart_ReceiveChar + 4
+        0x000003ca:    6808        .h      LDR      r0,[r1,#0]
+        0x000003cc:    b2c0        ..      UXTB     r0,r0
+        0x000003ce:    4770        pG      BX       lr
+    i.uart_SendChar
+    uart_SendChar
+        0x000003d0:    e004        ..      B        0x3dc ; uart_SendChar + 12
+        0x000003d2:    6842        Bh      LDR      r2,[r0,#4]
+        0x000003d4:    f0020201    ....    AND      r2,r2,#1
+        0x000003d8:    b902        ..      CBNZ     r2,0x3dc ; uart_SendChar + 12
+        0x000003da:    e000        ..      B        0x3de ; uart_SendChar + 14
+        0x000003dc:    e7f9        ..      B        0x3d2 ; uart_SendChar + 2
+        0x000003de:    bf00        ..      NOP      
+        0x000003e0:    6001        .`      STR      r1,[r0,#0]
+        0x000003e2:    4770        pG      BX       lr
+    i.uart_SendString
+    uart_SendString
+        0x000003e4:    b570        p.      PUSH     {r4-r6,lr}
+        0x000003e6:    4605        .F      MOV      r5,r0
+        0x000003e8:    4628        (F      MOV      r0,r5
+        0x000003ea:    f7fffe79    ..y.    BL       strlen ; 0xe0
+        0x000003ee:    4606        .F      MOV      r6,r0
+        0x000003f0:    2400        .$      MOVS     r4,#0
+        0x000003f2:    e005        ..      B        0x400 ; uart_SendString + 28
+        0x000003f4:    5d29        )]      LDRB     r1,[r5,r4]
+        0x000003f6:    f04f4080    O..@    MOV      r0,#0x40000000
+        0x000003fa:    f7ffffe9    ....    BL       uart_SendChar ; 0x3d0
+        0x000003fe:    1c64        d.      ADDS     r4,r4,#1
+        0x00000400:    42b4        .B      CMP      r4,r6
+        0x00000402:    d3f7        ..      BCC      0x3f4 ; uart_SendString + 16
+        0x00000404:    bd70        p.      POP      {r4-r6,pc}
+    i.uart_init
+    uart_init
+        0x00000406:    e92d41f0    -..A    PUSH     {r4-r8,lr}
+        0x0000040a:    4604        .F      MOV      r4,r0
+        0x0000040c:    460d        .F      MOV      r5,r1
+        0x0000040e:    e9ddc808    ....    LDRD     r12,r8,[sp,#0x20]
+        0x00000412:    e9dd6706    ...g    LDRD     r6,r7,[sp,#0x18]
+        0x00000416:    2100        .!      MOVS     r1,#0
+        0x00000418:    b10a        ..      CBZ      r2,0x41e ; uart_init + 24
+        0x0000041a:    f0410101    A...    ORR      r1,r1,#1
+        0x0000041e:    b10b        ..      CBZ      r3,0x424 ; uart_init + 30
+        0x00000420:    f0410102    A...    ORR      r1,r1,#2
+        0x00000424:    b10e        ..      CBZ      r6,0x42a ; uart_init + 36
+        0x00000426:    f0410104    A...    ORR      r1,r1,#4
+        0x0000042a:    b10f        ..      CBZ      r7,0x430 ; uart_init + 42
+        0x0000042c:    f0410108    A...    ORR      r1,r1,#8
+        0x00000430:    f1bc0f00    ....    CMP      r12,#0
+        0x00000434:    d001        ..      BEQ      0x43a ; uart_init + 52
+        0x00000436:    f0410110    A...    ORR      r1,r1,#0x10
+        0x0000043a:    f1b80f00    ....    CMP      r8,#0
+        0x0000043e:    d001        ..      BEQ      0x444 ; uart_init + 62
+        0x00000440:    f0410120    A. .    ORR      r1,r1,#0x20
+        0x00000444:    2000        .       MOVS     r0,#0
+        0x00000446:    60a0        .`      STR      r0,[r4,#8]
+        0x00000448:    6125        %a      STR      r5,[r4,#0x10]
+        0x0000044a:    60a1        .`      STR      r1,[r4,#8]
+        0x0000044c:    6860        `h      LDR      r0,[r4,#4]
+        0x0000044e:    f000000c    ....    AND      r0,r0,#0xc
+        0x00000452:    b110        ..      CBZ      r0,0x45a ; uart_init + 84
+        0x00000454:    2001        .       MOVS     r0,#1
+        0x00000456:    e8bd81f0    ....    POP      {r4-r8,pc}
+        0x0000045a:    2000        .       MOVS     r0,#0
+        0x0000045c:    e7fb        ..      B        0x456 ; uart_init + 80
+        0x0000045e:    0000        ..      MOVS     r0,r0
+    $d.realdata
+    Region$$Table$$Base
+        0x00000460:    00000480    ....    DCD    1152
+        0x00000464:    20000000    ...     DCD    536870912
+        0x00000468:    00000008    ....    DCD    8
+        0x0000046c:    0000031c    ....    DCD    796
+        0x00000470:    00000488    ....    DCD    1160
+        0x00000474:    20000008    ...     DCD    536870920
+        0x00000478:    00008000    ....    DCD    32768
+        0x0000047c:    0000032c    ,...    DCD    812
+    Region$$Table$$Limit
+
+====================================
+
+** Section #2
+
+    Name        : ER_RW
+    Type        : SHT_PROGBITS (0x00000001)
+    Flags       : SHF_ALLOC + SHF_WRITE (0x00000003)
+    Addr        : 0x20000000
+    File Offset : 1204 (0x4b4)
+    Size        : 8 bytes (0x8)
+    Link        : SHN_UNDEF
+    Info        : 0
+    Alignment   : 4
+    Entry Size  : 0
+
+
+====================================
+
+** Section #3
+
+    Name        : ER_ZI
+    Type        : SHT_NOBITS (0x00000008)
+    Flags       : SHF_ALLOC + SHF_WRITE (0x00000003)
+    Addr        : 0x20000008
+    File Offset : 1212 (0x4bc)
+    Size        : 32768 bytes (0x8000)
+    Link        : SHN_UNDEF
+    Info        : 0
+    Alignment   : 8
+    Entry Size  : 0
+
+
+====================================
+
+** Section #4
+
+    Name        : .debug_abbrev
+    Type        : SHT_PROGBITS (0x00000001)
+    Flags       : None (0x00000000)
+    Addr        : 0x00000000
+    File Offset : 1212 (0x4bc)
+    Size        : 1476 bytes (0x5c4)
+    Link        : SHN_UNDEF
+    Info        : 0
+    Alignment   : 1
+    Entry Size  : 0
+
+
+====================================
+
+** Section #5
+
+    Name        : .debug_frame
+    Type        : SHT_PROGBITS (0x00000001)
+    Flags       : None (0x00000000)
+    Addr        : 0x00000000
+    File Offset : 2688 (0xa80)
+    Size        : 1432 bytes (0x598)
+    Link        : SHN_UNDEF
+    Info        : 0
+    Alignment   : 1
+    Entry Size  : 0
+
+
+====================================
+
+** Section #6
+
+    Name        : .debug_info
+    Type        : SHT_PROGBITS (0x00000001)
+    Flags       : None (0x00000000)
+    Addr        : 0x00000000
+    File Offset : 4120 (0x1018)
+    Size        : 16020 bytes (0x3e94)
+    Link        : SHN_UNDEF
+    Info        : 0
+    Alignment   : 1
+    Entry Size  : 0
+
+
+====================================
+
+** Section #7
+
+    Name        : .debug_line
+    Type        : SHT_PROGBITS (0x00000001)
+    Flags       : None (0x00000000)
+    Addr        : 0x00000000
+    File Offset : 20140 (0x4eac)
+    Size        : 3984 bytes (0xf90)
+    Link        : SHN_UNDEF
+    Info        : 0
+    Alignment   : 1
+    Entry Size  : 0
+
+
+====================================
+
+** Section #8
+
+    Name        : .debug_loc
+    Type        : SHT_PROGBITS (0x00000001)
+    Flags       : None (0x00000000)
+    Addr        : 0x00000000
+    File Offset : 24124 (0x5e3c)
+    Size        : 1584 bytes (0x630)
+    Link        : SHN_UNDEF
+    Info        : 0
+    Alignment   : 1
+    Entry Size  : 0
+
+
+====================================
+
+** Section #9
+
+    Name        : .debug_macinfo
+    Type        : SHT_PROGBITS (0x00000001)
+    Flags       : None (0x00000000)
+    Addr        : 0x00000000
+    File Offset : 25708 (0x646c)
+    Size        : 26184 bytes (0x6648)
+    Link        : SHN_UNDEF
+    Info        : 0
+    Alignment   : 1
+    Entry Size  : 0
+
+
+====================================
+
+** Section #10
+
+    Name        : .debug_pubnames
+    Type        : SHT_PROGBITS (0x00000001)
+    Flags       : None (0x00000000)
+    Addr        : 0x00000000
+    File Offset : 51892 (0xcab4)
+    Size        : 1327 bytes (0x52f)
+    Link        : SHN_UNDEF
+    Info        : 0
+    Alignment   : 1
+    Entry Size  : 0
+
+
+====================================
+
+** Section #11
+
+    Name        : .symtab
+    Type        : SHT_SYMTAB (0x00000002)
+    Flags       : None (0x00000000)
+    Addr        : 0x00000000
+    File Offset : 53220 (0xcfe4)
+    Size        : 2944 bytes (0xb80)
+    Link        : Section 12 (.strtab)
+    Info        : Last local symbol no = 111
+    Alignment   : 4
+    Entry Size  : 16
+
+
+====================================
+
+** Section #12
+
+    Name        : .strtab
+    Type        : SHT_STRTAB (0x00000003)
+    Flags       : None (0x00000000)
+    Addr        : 0x00000000
+    File Offset : 56164 (0xdb64)
+    Size        : 2412 bytes (0x96c)
+    Link        : SHN_UNDEF
+    Info        : 0
+    Alignment   : 1
+    Entry Size  : 0
+
+
+====================================
+
+** Section #13
+
+    Name        : .note
+    Type        : SHT_NOTE (0x00000007)
+    Flags       : None (0x00000000)
+    Addr        : 0x00000000
+    File Offset : 58576 (0xe4d0)
+    Size        : 28 bytes (0x1c)
+    Link        : SHN_UNDEF
+    Info        : 0
+    Alignment   : 4
+    Entry Size  : 0
+
+        Section     Segment
+    ====================================
+
+              1           0
+              2           0
+              3           0
+
+====================================
+
+** Section #14
+
+    Name        : .comment
+    Type        : SHT_PROGBITS (0x00000001)
+    Flags       : None (0x00000000)
+    Addr        : 0x00000000
+    File Offset : 58604 (0xe4ec)
+    Size        : 6656 bytes (0x1a00)
+    Link        : SHN_UNDEF
+    Info        : 0
+    Alignment   : 1
+    Entry Size  : 0
+
+    Component: ARM Compiler 5.06 update 7 (build 960) Tool: armlink [4d3601]
+    ArmLink --strict --library_type=microlib --callgraph --load_addr_map_info --map --symbols --xref --diag_suppress=9931 --ro_base=0x0 --rw_base=0x20000000 --cpu=Cortex-M3 --first=__Vectors --list=.\Listings\cm3.map --output=.\cm3.axf --entry=Reset_Handler --info=summarysizes,sizes,totals,unused,veneers
+
+    C:\keil5\keil5\ARM\ARMCC\Bin\..\lib\armlib\h_w.l
+    C:\keil5\keil5\ARM\ARMCC\Bin\..\lib\armlib\m_ws.l
+    C:\keil5\keil5\ARM\ARMCC\Bin\..\lib\armlib\mc_w.l
+    C:\keil5\keil5\ARM\ARMCC\Bin\..\lib\armlib\mf_w.l
+    C:\keil5\keil5\ARM\ARMCC\Bin\..\lib\armlib\vfpsupport.l
+    Input Comments:
+    
+    cortexm3_driver.o
+    
+    Component: ARM Compiler 5.06 update 7 (build 960) Tool: armlink [4d3601]
+    armlink --partial --no_add_relocs_to_undefined --no_generate_mapping_symbols --diag_suppress=9931,9931,6642 --cpu=Cortex-M3 --fpu=SoftVFP --output=.\cortexm3_driver.o --vfemode=force
+
+    Input Comments:
+    
+    p248c-3
+    
+    Component: ARM Compiler 5.06 update 7 (build 960) Tool: armasm [4d35fa]
+    armasm --debug --diag_suppress=9931,9931,1602,1073 --cpu=Cortex-M3 --fpu=SoftVFP --apcs=/interwork/interwork --divide 
+    cortexm3_driver.o
+    
+    Component: ARM Compiler 5.06 update 7 (build 960) Tool: ArmCC [4d365d]
+    ArmCC --c99 --split_sections --debug -c -o.\cortexm3_driver.o --depend=.\cortexm3_driver.d --cpu=Cortex-M3 --apcs=interwork -O0 --diag_suppress=9931 -I.\Peripheral -I.\code -I.\RTE\_Target_1 -IC:\keil5\keil5\ARM\PACK\Keil\V2M-MPS2_DSx_BSP\1.1.0\Device\DS_CM3\Include -IC:\keil5\keil5\ARM\CMSIS\Include -D__MICROLIB -D__UVISION_VERSION=527 -DDS_CM3 --omf_browse=.\cortexm3_driver.crf code\CortexM3_driver.c
+    
+    
+    
+    handler.o
+    
+    Component: ARM Compiler 5.06 update 7 (build 960) Tool: armlink [4d3601]
+    armlink --partial --no_add_relocs_to_undefined --no_generate_mapping_symbols --diag_suppress=9931,9931,6642 --cpu=Cortex-M3 --fpu=SoftVFP --output=.\handler.o --vfemode=force
+
+    Input Comments:
+    
+    p2a70-3
+    
+    Component: ARM Compiler 5.06 update 7 (build 960) Tool: armasm [4d35fa]
+    armasm --debug --diag_suppress=9931,9931,1602,1073 --cpu=Cortex-M3 --fpu=SoftVFP --apcs=/interwork/interwork --divide 
+    handler.o
+    
+    Component: ARM Compiler 5.06 update 7 (build 960) Tool: ArmCC [4d365d]
+    ArmCC --c99 --split_sections --debug -c -o.\handler.o --depend=.\handler.d --cpu=Cortex-M3 --apcs=interwork -O0 --diag_suppress=9931 -I.\Peripheral -I.\code -I.\RTE\_Target_1 -IC:\keil5\keil5\ARM\PACK\Keil\V2M-MPS2_DSx_BSP\1.1.0\Device\DS_CM3\Include -IC:\keil5\keil5\ARM\CMSIS\Include -D__MICROLIB -D__UVISION_VERSION=527 -DDS_CM3 --omf_browse=.\handler.crf code\handler.c
+    
+    
+    
+    main.o
+    
+    Component: ARM Compiler 5.06 update 7 (build 960) Tool: armlink [4d3601]
+    armlink --partial --no_add_relocs_to_undefined --no_generate_mapping_symbols --diag_suppress=9931,9931,6642 --cpu=Cortex-M3 --fpu=SoftVFP --output=.\main.o --vfemode=force
+
+    Input Comments:
+    
+    p4f84-3
+    
+    Component: ARM Compiler 5.06 update 7 (build 960) Tool: armasm [4d35fa]
+    armasm --debug --diag_suppress=9931,9931,1602,1073 --cpu=Cortex-M3 --fpu=SoftVFP --apcs=/interwork/interwork --divide 
+    main.o
+    
+    Component: ARM Compiler 5.06 update 7 (build 960) Tool: ArmCC [4d365d]
+    ArmCC --c99 --split_sections --debug -c -o.\main.o --depend=.\main.d --cpu=Cortex-M3 --apcs=interwork -O0 --diag_suppress=9931 -I.\Peripheral -I.\code -I.\RTE\_Target_1 -IC:\keil5\keil5\ARM\PACK\Keil\V2M-MPS2_DSx_BSP\1.1.0\Device\DS_CM3\Include -IC:\keil5\keil5\ARM\CMSIS\Include -D__MICROLIB -D__UVISION_VERSION=527 -DDS_CM3 --omf_browse=.\main.crf code\main.c
+    
+    
+    
+    
+    
+    retarget.o
+    
+    Component: ARM Compiler 5.06 update 7 (build 960) Tool: armlink [4d3601]
+    armlink --partial --no_add_relocs_to_undefined --no_generate_mapping_symbols --diag_suppress=9931,9931,6642 --cpu=Cortex-M3 --fpu=SoftVFP --output=.\retarget.o --vfemode=force
+
+    Input Comments:
+    
+    p4d20-3
+    
+    Component: ARM Compiler 5.06 update 7 (build 960) Tool: armasm [4d35fa]
+    armasm --debug --diag_suppress=9931,9931,1602,1073 --cpu=Cortex-M3 --fpu=SoftVFP --apcs=/interwork/interwork --divide 
+    retarget.o
+    
+    Component: ARM Compiler 5.06 update 7 (build 960) Tool: ArmCC [4d365d]
+    ArmCC --c99 --split_sections --debug -c -o.\retarget.o --depend=.\retarget.d --cpu=Cortex-M3 --apcs=interwork -O0 --diag_suppress=9931 -I.\Peripheral -I.\code -I.\RTE\_Target_1 -IC:\keil5\keil5\ARM\PACK\Keil\V2M-MPS2_DSx_BSP\1.1.0\Device\DS_CM3\Include -IC:\keil5\keil5\ARM\CMSIS\Include -D__MICROLIB -D__UVISION_VERSION=527 -DDS_CM3 --omf_browse=.\retarget.crf code\Retarget.c
+    
+    
+    
+    
+    
+    startup_cm3ds.o
+    
+    Component: ARM Compiler 5.06 update 7 (build 960) Tool: armasm [4d35fa]
+    ArmAsm --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interwork --depend=.\startup_cm3ds.d  -I.\RTE\_Target_1 -IC:\keil5\keil5\ARM\PACK\Keil\V2M-MPS2_DSx_BSP\1.1.0\Device\DS_CM3\Include -IC:\keil5\keil5\ARM\CMSIS\Include --predefin
+    
+    
+    system.o
+    
+    Component: ARM Compiler 5.06 update 7 (build 960) Tool: armlink [4d3601]
+    armlink --partial --no_add_relocs_to_undefined --no_generate_mapping_symbols --diag_suppress=9931,9931,6642 --cpu=Cortex-M3 --fpu=SoftVFP --output=.\system.o --vfemode=force
+
+    Input Comments:
+    
+    p454c-3
+    
+    Component: ARM Compiler 5.06 update 7 (build 960) Tool: armasm [4d35fa]
+    armasm --debug --diag_suppress=9931,9931,1602,1073 --cpu=Cortex-M3 --fpu=SoftVFP --apcs=/interwork/interwork --divide 
+    system.o
+    
+    Component: ARM Compiler 5.06 update 7 (build 960) Tool: ArmCC [4d365d]
+    ArmCC --c99 --split_sections --debug -c -o.\system.o --depend=.\system.d --cpu=Cortex-M3 --apcs=interwork -O0 --diag_suppress=9931 -I.\Peripheral -I.\code -I.\RTE\_Target_1 -IC:\keil5\keil5\ARM\PACK\Keil\V2M-MPS2_DSx_BSP\1.1.0\Device\DS_CM3\Include -IC:\keil5\keil5\ARM\CMSIS\Include -D__MICROLIB -D__UVISION_VERSION=527 -DDS_CM3 --omf_browse=.\system.crf code\system.c
+    
+    
+    
+    
+    
+    spi_gpio.o
+    
+    Component: ARM Compiler 5.06 update 7 (build 960) Tool: armlink [4d3601]
+    armlink --partial --no_add_relocs_to_undefined --no_generate_mapping_symbols --diag_suppress=9931,9931,6642 --cpu=Cortex-M3 --fpu=SoftVFP --output=.\spi_gpio.o --vfemode=force
+
+    Input Comments:
+    
+    p4548-3
+    
+    Component: ARM Compiler 5.06 update 7 (build 960) Tool: armasm [4d35fa]
+    armasm --debug --diag_suppress=9931,9931,1602,1073 --cpu=Cortex-M3 --fpu=SoftVFP --apcs=/interwork/interwork --divide 
+    spi_gpio.o
+    
+    Component: ARM Compiler 5.06 update 7 (build 960) Tool: ArmCC [4d365d]
+    ArmCC --c99 --split_sections --debug -c -o.\spi_gpio.o --depend=.\spi_gpio.d --cpu=Cortex-M3 --apcs=interwork -O0 --diag_suppress=9931 -I.\Peripheral -I.\code -I.\RTE\_Target_1 -IC:\keil5\keil5\ARM\PACK\Keil\V2M-MPS2_DSx_BSP\1.1.0\Device\DS_CM3\Include -IC:\keil5\keil5\ARM\CMSIS\Include -D__MICROLIB -D__UVISION_VERSION=527 -DDS_CM3 --omf_browse=.\spi_gpio.crf Peripheral\spi_gpio.c
+    
+    
+    
+    
+    
+    
+
+====================================
+
+** Section #15
+
+    Name        : .shstrtab
+    Type        : SHT_STRTAB (0x00000003)
+    Flags       : None (0x00000000)
+    Addr        : 0x00000000
+    File Offset : 65260 (0xfeec)
+    Size        : 156 bytes (0x9c)
+    Link        : SHN_UNDEF
+    Info        : 0
+    Alignment   : 1
+    Entry Size  : 0
+
+
+====================================
+

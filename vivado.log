@@ -1,0 +1,898 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Feb 21 16:01:02 2023
+# Process ID: 20032
+# Current directory: D:/FPGA/ARM_SPI/CortexM3_Eval
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21772 D:\FPGA\ARM_SPI\CortexM3_Eval\CortexM3_Eval.xpr
+# Log file: D:/FPGA/ARM_SPI/CortexM3_Eval/vivado.log
+# Journal file: D:/FPGA/ARM_SPI/CortexM3_Eval\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1_AHBMatrix/L1_AHBMatrix_lite.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/vivado/Xilinx/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'ila_0' generated file not found 'd:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/ip/ila_0/ila_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'ila_0' generated file not found 'd:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/ip/ila_0/ila_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'ila_0' generated file not found 'd:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/ip/ila_0/ila_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'ila_0' generated file not found 'd:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/ip/ila_0/ila_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'ila_0' generated file not found 'd:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/ip/ila_0/ila_0_sim_netlist.vhdl'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 888.410 ; gain = 195.719
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+generate_target all [get_files  D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+catch { config_ip_cache -export [get_ips -all ila_0] }
+export_ip_user_files -of_objects [get_files D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+launch_runs -jobs 4 ila_0_synth_1
+[Tue Feb 21 16:01:46 2023] Launched ila_0_synth_1...
+Run output will be captured here: D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.runs/ila_0_synth_1/runme.log
+export_simulation -of_objects [get_files D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/ip/ila_0/ila_0.xci] -directory D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.ip_user_files/sim_scripts -ip_user_files_dir D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.ip_user_files -ipstatic_source_dir D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.cache/compile_simlib/modelsim} {questa=D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.cache/compile_simlib/questa} {riviera=D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.cache/compile_simlib/riviera} {activehdl=D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Feb 21 16:02:12 2023] Launched ila_0_synth_1, synth_1...
+Run output will be captured here:
+ila_0_synth_1: D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.runs/ila_0_synth_1/runme.log
+synth_1: D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.runs/synth_1/runme.log
+[Tue Feb 21 16:02:12 2023] Launched impl_1...
+Run output will be captured here: D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1087.340 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+set_property PROGRAM.FILE {D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.runs/impl_1/SOC_TOP_V2.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.runs/impl_1/SOC_TOP_V2.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.runs/impl_1/SOC_TOP_V2.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'your_instance_name' at location 'uuid_C43761E0C03650398C6907A263A83E64' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.runs/impl_1/SOC_TOP_V2.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.runs/impl_1/SOC_TOP_V2.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.runs/impl_1/SOC_TOP_V2.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:34:01
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:34:02
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:34:05
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:34:06
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:34:09
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:34:10
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:35:31
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:35:32
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:35:35
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:35:36
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:35:39
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:35:40
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:36:19
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:36:20
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:36:24
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:36:24
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:36:28
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:36:28
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:36:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:36:32
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:37:43
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:37:44
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:37:48
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:37:48
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:37:52
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:37:53
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bF [get_hw_probes EXP_IBUF_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:41:23
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:41:25
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:41:28
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:41:29
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:41:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:41:33
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:41:36
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:41:37
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:41:40
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:41:41
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:42:55
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:42:55
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:42:59
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:42:59
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:43:02
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:43:02
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:44:03
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:44:04
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:44:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:44:07
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:44:11
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:44:11
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:45:47
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:45:47
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:45:50
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:45:50
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:45:54
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:45:55
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:48:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:48:07
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:48:11
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:48:11
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:48:14
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:48:14
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:48:18
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:48:18
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:50:01
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:50:01
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:50:04
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:50:04
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:50:08
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:50:08
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:50:11
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:50:11
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:50:42
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:50:42
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:50:46
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:50:46
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:50:50
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:50:50
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:50:53
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:50:53
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:50:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:50:57
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:51:00
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:51:00
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:51:04
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:51:04
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:51:08
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:51:08
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:52:52
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:52:52
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 16:52:55
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 16:52:55
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:00:16
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:00:17
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:00:20
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:00:20
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:00:24
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:00:24
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:00:27
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:00:27
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:00:30
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:00:31
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:00:34
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:00:34
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:01:42
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:01:42
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:01:46
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:01:46
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:01:49
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:01:49
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:03:14
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:03:14
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:03:18
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:03:18
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:03:21
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:03:21
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:03:25
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:03:25
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:04:10
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:04:10
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:04:13
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:04:14
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:04:17
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:04:17
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:04:20
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:04:21
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:04:24
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:04:24
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:04:52
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:04:53
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:04:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:04:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:04:59
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:05:00
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:05:03
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:05:03
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_DATA_DEPTH {16384}] [get_ips ila_0]
+generate_target all [get_files  D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+catch { config_ip_cache -export [get_ips -all ila_0] }
+export_ip_user_files -of_objects [get_files D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+reset_run ila_0_synth_1
+launch_runs -jobs 4 ila_0_synth_1
+[Tue Feb 21 17:06:12 2023] Launched ila_0_synth_1...
+Run output will be captured here: D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.runs/ila_0_synth_1/runme.log
+export_simulation -of_objects [get_files D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/ip/ila_0/ila_0.xci] -directory D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.ip_user_files/sim_scripts -ip_user_files_dir D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.ip_user_files -ipstatic_source_dir D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.cache/compile_simlib/modelsim} {questa=D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.cache/compile_simlib/questa} {riviera=D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.cache/compile_simlib/riviera} {activehdl=D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Feb 21 17:06:28 2023] Launched ila_0_synth_1, synth_1...
+Run output will be captured here:
+ila_0_synth_1: D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.runs/ila_0_synth_1/runme.log
+synth_1: D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.runs/synth_1/runme.log
+[Tue Feb 21 17:06:28 2023] Launched impl_1...
+Run output will be captured here: D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.runs/impl_1/SOC_TOP_V2.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.runs/impl_1/SOC_TOP_V2.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.runs/impl_1/SOC_TOP_V2.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:55:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:55:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:55:59
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:56:00
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:56:03
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:56:03
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:56:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:56:07
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:56:10
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:56:10
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-21 17:56:14
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-21 17:56:14
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+close_hw_manager
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.sim/M3_tb.v
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/vivado/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'M3_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M3_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/ip/ila_0/sim/ila_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ila_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SOC_TOP_V2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1AhbMtx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxArbM0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1AhbMtxArbM0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxArbM1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1AhbMtxArbM1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxArbM2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1AhbMtxArbM2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxArbM3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1AhbMtxArbM3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxArbM4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1AhbMtxArbM4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxDecS0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1AhbMtxDecS0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxDecS1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1AhbMtxDecS1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxDecS2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1AhbMtxDecS2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxDecS3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1AhbMtxDecS3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxDecS4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1AhbMtxDecS4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxInStg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1AhbMtxInStg
+WARNING: [VRFC 10-3507] macro 'TRN_IDLE' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxInStg.v:113]
+WARNING: [VRFC 10-3507] macro 'TRN_BUSY' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxInStg.v:114]
+WARNING: [VRFC 10-3507] macro 'TRN_NONSEQ' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxInStg.v:115]
+WARNING: [VRFC 10-3507] macro 'TRN_SEQ' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxInStg.v:116]
+WARNING: [VRFC 10-3507] macro 'BUR_SINGLE' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxInStg.v:119]
+WARNING: [VRFC 10-3507] macro 'BUR_INCR' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxInStg.v:120]
+WARNING: [VRFC 10-3507] macro 'BUR_WRAP4' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxInStg.v:121]
+WARNING: [VRFC 10-3507] macro 'BUR_INCR4' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxInStg.v:122]
+WARNING: [VRFC 10-3507] macro 'BUR_WRAP8' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxInStg.v:123]
+WARNING: [VRFC 10-3507] macro 'BUR_INCR8' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxInStg.v:124]
+WARNING: [VRFC 10-3507] macro 'BUR_WRAP16' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxInStg.v:125]
+WARNING: [VRFC 10-3507] macro 'BUR_INCR16' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxInStg.v:126]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxOutStgM0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1AhbMtxOutStgM0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxOutStgM1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1AhbMtxOutStgM1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxOutStgM2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1AhbMtxOutStgM2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxOutStgM3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1AhbMtxOutStgM3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtxOutStgM4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1AhbMtxOutStgM4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L1AhbMtx/L1AhbMtx_default_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L1AhbMtx_default_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbArb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L2AhbArb
+WARNING: [VRFC 10-3507] macro 'TRN_IDLE' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbArb.v:78]
+WARNING: [VRFC 10-3507] macro 'TRN_BUSY' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbArb.v:79]
+WARNING: [VRFC 10-3507] macro 'TRN_NONSEQ' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbArb.v:80]
+WARNING: [VRFC 10-3507] macro 'TRN_SEQ' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbArb.v:81]
+WARNING: [VRFC 10-3507] macro 'BUR_SINGLE' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbArb.v:84]
+WARNING: [VRFC 10-3507] macro 'BUR_INCR' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbArb.v:85]
+WARNING: [VRFC 10-3507] macro 'BUR_WRAP4' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbArb.v:86]
+WARNING: [VRFC 10-3507] macro 'BUR_INCR4' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbArb.v:87]
+WARNING: [VRFC 10-3507] macro 'BUR_WRAP8' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbArb.v:88]
+WARNING: [VRFC 10-3507] macro 'BUR_INCR8' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbArb.v:89]
+WARNING: [VRFC 10-3507] macro 'BUR_WRAP16' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbArb.v:90]
+WARNING: [VRFC 10-3507] macro 'BUR_INCR16' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbArb.v:91]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbDecS0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L2AhbDecS0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbInStg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L2AhbInStg
+WARNING: [VRFC 10-3507] macro 'TRN_IDLE' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbInStg.v:113]
+WARNING: [VRFC 10-3507] macro 'TRN_BUSY' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbInStg.v:114]
+WARNING: [VRFC 10-3507] macro 'TRN_NONSEQ' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbInStg.v:115]
+WARNING: [VRFC 10-3507] macro 'TRN_SEQ' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbInStg.v:116]
+WARNING: [VRFC 10-3507] macro 'BUR_SINGLE' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbInStg.v:119]
+WARNING: [VRFC 10-3507] macro 'BUR_INCR' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbInStg.v:120]
+WARNING: [VRFC 10-3507] macro 'BUR_WRAP4' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbInStg.v:121]
+WARNING: [VRFC 10-3507] macro 'BUR_INCR4' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbInStg.v:122]
+WARNING: [VRFC 10-3507] macro 'BUR_WRAP8' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbInStg.v:123]
+WARNING: [VRFC 10-3507] macro 'BUR_INCR8' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbInStg.v:124]
+WARNING: [VRFC 10-3507] macro 'BUR_WRAP16' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbInStg.v:125]
+WARNING: [VRFC 10-3507] macro 'BUR_INCR16' redefined [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbInStg.v:126]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbMtx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L2AhbMtx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbMtx_default_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L2AhbMtx_default_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/L2AhbMtx/L2AhbOutStg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module L2AhbOutStg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/peripheral/cmsdk_ahb_default_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmsdk_ahb_default_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/gpio/cmsdk_ahb_gpio.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmsdk_ahb_gpio
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/sys_ahb/cmsdk_ahb_to_ahb_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmsdk_ahb_to_ahb_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/sys_ahb/cmsdk_ahb_to_ahb_sync_error_canc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmsdk_ahb_to_ahb_sync_error_canc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/rtl_cortex/cmsdk_ahb_to_apb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmsdk_ahb_to_apb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/gpio/cmsdk_ahb_to_iop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmsdk_ahb_to_iop
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/peripheral/cmsdk_ahb_to_sram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmsdk_ahb_to_sram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/led/cmsdk_apb3_eg_slave_interface_led.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmsdk_apb3_eg_slave_interface_led
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/led/cmsdk_apb3_eg_slave_led.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmsdk_apb3_eg_slave_led
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/apb/cmsdk_apb_slave_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmsdk_apb_slave_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/peripheral/cmsdk_apb_uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmsdk_apb_uart
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/peripheral/cmsdk_fpga_sram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmsdk_fpga_sram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/gpio/cmsdk_iop_gpio.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmsdk_iop_gpio
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/rtl_cortex/cortexm3ds_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cortexm3ds_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/button/custom_apb_button.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module custom_apb_button
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/imports/led/custom_apb_led.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module custom_apb_led
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/swdio_tri_buf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module swdio_tri_buf
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sim_1/new/M3_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M3_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 3096.078 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '8' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.sim/sim_1/behav/xsim'
+"xelab -wto 9906438ee537497f9296ade98e12215d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot M3_tb_behav xil_defaultlib.M3_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/vivado/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 9906438ee537497f9296ade98e12215d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot M3_tb_behav xil_defaultlib.M3_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM0' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:512]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM1' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:527]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM2' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:542]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM3' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:557]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM4' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:572]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERS0' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:685]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM0' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:700]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM1' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:715]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:750]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:920]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:967]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 12 for port 'PADDR' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:1036]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 12 for port 'paddr' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:1059]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'HADDR' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:1141]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'HRESP' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:1149]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=20.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module unisims_ver.IOBUF
+Compiling module xil_defaultlib.swdio_tri_buf
+Compiling module xil_defaultlib.cortexm3ds_logic
+Compiling module xil_defaultlib.L1AhbMtxInStg
+Compiling module xil_defaultlib.L1AhbMtx_default_slave
+Compiling module xil_defaultlib.L1AhbMtxDecS0
+Compiling module xil_defaultlib.L1AhbMtxDecS1
+Compiling module xil_defaultlib.L1AhbMtxDecS2
+Compiling module xil_defaultlib.L1AhbMtxDecS3
+Compiling module xil_defaultlib.L1AhbMtxDecS4
+Compiling module xil_defaultlib.L1AhbMtxArbM0
+Compiling module xil_defaultlib.L1AhbMtxOutStgM0
+Compiling module xil_defaultlib.L1AhbMtxArbM1
+Compiling module xil_defaultlib.L1AhbMtxOutStgM1
+Compiling module xil_defaultlib.L1AhbMtxArbM2
+Compiling module xil_defaultlib.L1AhbMtxOutStgM2
+Compiling module xil_defaultlib.L1AhbMtxArbM3
+Compiling module xil_defaultlib.L1AhbMtxOutStgM3
+Compiling module xil_defaultlib.L1AhbMtxArbM4
+Compiling module xil_defaultlib.L1AhbMtxOutStgM4
+Compiling module xil_defaultlib.L1AhbMtx
+Compiling module xil_defaultlib.cmsdk_ahb_to_ahb_sync_error_canc
+Compiling module xil_defaultlib.cmsdk_ahb_to_ahb_sync(MW=2,BURST...
+Compiling module xil_defaultlib.L2AhbInStg
+Compiling module xil_defaultlib.L2AhbMtx_default_slave
+Compiling module xil_defaultlib.L2AhbDecS0
+Compiling module xil_defaultlib.L2AhbArb
+Compiling module xil_defaultlib.L2AhbOutStg
+Compiling module xil_defaultlib.L2AhbMtx
+Compiling module xil_defaultlib.cmsdk_ahb_to_apb(REGISTER_WDATA=...
+Compiling module xil_defaultlib.cmsdk_apb_slave_mux(PORT3_ENABLE...
+Compiling module xil_defaultlib.cmsdk_ahb_to_sram
+Compiling module xil_defaultlib.cmsdk_fpga_sram(AW=14)
+Compiling module xil_defaultlib.cmsdk_apb_uart
+Compiling module xil_defaultlib.cmsdk_apb3_eg_slave_interface_le...
+Compiling module xil_defaultlib.custom_apb_led
+Compiling module xil_defaultlib.cmsdk_apb3_eg_slave_led
+Compiling module xil_defaultlib.custom_apb_button
+Compiling module xil_defaultlib.cmsdk_ahb_default_slave
+Compiling module xil_defaultlib.cmsdk_ahb_to_iop
+Compiling module xil_defaultlib.cmsdk_iop_gpio
+Compiling module xil_defaultlib.cmsdk_ahb_gpio
+Compiling module xil_defaultlib.ila_0
+Compiling module xil_defaultlib.SOC_TOP_V2(SimPresent=1)
+Compiling module xil_defaultlib.M3_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M3_tb_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.sim/sim_1/behav/xsim/xsim.dir/M3_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 92.461 ; gain = 0.000
+INFO: [Common 17-206] Exiting Webtalk at Thu Feb 23 19:26:56 2023...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:55 . Memory (MB): peak = 3096.078 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '54' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "M3_tb_behav -key {Behavioral:sim_1:Functional:M3_tb} -tclbatch {M3_tb.tcl} -view {D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sim_1/imports/CortexM3_Eval/M3_tb_1.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sim_1/imports/CortexM3_Eval/M3_tb_1.wcfg
+open_wave_config: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3096.078 ; gain = 0.000
+source M3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3096.078 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'M3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:17 ; elapsed = 00:01:18 . Memory (MB): peak = 3096.078 ; gain = 0.000
+run 2 ms
+run: Time (s): cpu = 00:00:36 ; elapsed = 00:02:57 . Memory (MB): peak = 3096.078 ; gain = 0.000
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 3096.078 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/vivado/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'M3_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M3_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.sim/sim_1/behav/xsim'
+"xelab -wto 9906438ee537497f9296ade98e12215d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot M3_tb_behav xil_defaultlib.M3_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/vivado/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 9906438ee537497f9296ade98e12215d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot M3_tb_behav xil_defaultlib.M3_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM0' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:512]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM1' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:527]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM2' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:542]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM3' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:557]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM4' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:572]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERS0' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:685]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM0' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:700]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM1' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:715]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:750]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:920]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:967]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 12 for port 'PADDR' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:1036]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 12 for port 'paddr' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:1059]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'HADDR' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:1141]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'HRESP' [D:/FPGA/ARM_SPI/CortexM3_Eval/CortexM3_Eval.srcs/sources_1/new/ARM_SOC_TOP.v:1149]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 3096.078 ; gain = 0.000
+run 2 ms
+run: Time (s): cpu = 00:00:41 ; elapsed = 00:03:10 . Memory (MB): peak = 3096.078 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 23 19:54:04 2023...
